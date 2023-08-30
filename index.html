@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change html contant</title>
+    </head>
+    <style>
+    #demo{
+        font-size: 40px;
+        color: red;
+        font-weight: 700;
+        padding-bottom: 30px;
+
+    }
+    button{
+        color: white;
+        font-size: 20px;
+        background-color: black;
+
+
+
+    }
+    img{
+        width: 300px;
+        height: 300px;
+
+    }
+  </style>
+    <body>
+        <div id="demo">
+            CSS
+        </div>
+        <img src="/1 (1).jpg" alt="" id="img" onmouseover="img()">
+        <button type="button" value="btn1" onclick="change_color()">chang-color</button>
+        <button type="button" value="btn2" onclick="change_text()">change-text</button>
+        <button type="button" value="btn3" onclick="hide()">Hide</button>
+        <button type="button" value="btn4" onclick="show()">show</button>
+        <button type="button" value="btn5" onclick="img()">change-img</button>
+
+    </body>
+
+    <script>
+    
+    //   function change color
+      function change_color (){
+        document.getElementById("demo").style.color="blue";
+      }
+    //   function change text
+      function change_text(){
+        document.getElementById("demo").innerHTML="JavaScript";
+      }
+    //   function hide
+      function hide(){
+        document.getElementById("demo").style.display="none";
+      }
+
+      //   function show
+      function show(){
+        document.getElementById("demo").style.display="block";
+      }
+
+      //   function noclickMouseOver
+      function img(){
+        document.getElementById("img").setAttribute("src","/1 (2).jpg");
+      }
+      
+      //   function change img 
+      function img(){
+        document.getElementById("img").setAttribute("src","/1 (2).jpg");
+      }
+
+    
+
+</script>
+</html>
